@@ -1,0 +1,90 @@
+@startuml
+annotation java.lang.Override
+annotation javax.annotation.Resource
+annotation javax.persistence.Basic
+annotation javax.persistence.Column
+annotation javax.persistence.Entity
+annotation javax.persistence.GeneratedValue
+annotation javax.persistence.Id
+annotation javax.persistence.JoinColumn
+annotation javax.persistence.ManyToOne
+annotation javax.persistence.NamedQueries
+annotation javax.persistence.NamedQuery
+annotation javax.persistence.OneToMany
+annotation javax.persistence.Table
+annotation javax.validation.constraints.NotNull
+annotation javax.validation.constraints.Size
+annotation javax.xml.bind.annotation.XmlRootElement
+annotation javax.xml.bind.annotation.XmlTransient
+class entities.Korisnik
+class entities.Mesto
+class java.util.List
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.jms.ConnectionFactory
+class javax.jms.JMSConsumer
+class javax.jms.JMSContext
+class javax.jms.JMSException
+class javax.jms.JMSProducer
+class javax.jms.ObjectMessage
+class javax.jms.Topic
+class javax.persistence.EntityManager
+class javax.persistence.EntityManagerFactory
+class javax.persistence.EntityTransaction
+class javax.persistence.GenerationType
+class javax.persistence.Persistence
+class javax.persistence.PersistenceContext
+class podsistem1.Main
+interface java.io.Serializable
+entities.Korisnik ..> java.lang.Override
+entities.Korisnik ..> javax.persistence.Basic
+entities.Korisnik ..> javax.persistence.Column
+entities.Korisnik ..> javax.persistence.Entity
+entities.Korisnik ..> javax.persistence.GeneratedValue
+entities.Korisnik ..> javax.persistence.Id
+entities.Korisnik ..> javax.persistence.JoinColumn
+entities.Korisnik ..> javax.persistence.ManyToOne
+entities.Korisnik ..> javax.persistence.NamedQueries
+entities.Korisnik ..> javax.persistence.NamedQuery
+entities.Korisnik ..> javax.persistence.Table
+entities.Korisnik ..> javax.validation.constraints.NotNull
+entities.Korisnik ..> javax.validation.constraints.Size
+entities.Korisnik ..> javax.xml.bind.annotation.XmlRootElement
+entities.Korisnik ..> javax.persistence.GenerationType
+entities.Korisnik --|> java.io.Serializable
+entities.Mesto ..> java.lang.Override
+entities.Mesto ..> javax.persistence.Basic
+entities.Mesto ..> javax.persistence.Column
+entities.Mesto ..> javax.persistence.Entity
+entities.Mesto ..> javax.persistence.GeneratedValue
+entities.Mesto ..> javax.persistence.Id
+entities.Mesto ..> javax.persistence.NamedQueries
+entities.Mesto ..> javax.persistence.NamedQuery
+entities.Mesto ..> javax.persistence.OneToMany
+entities.Mesto ..> javax.persistence.Table
+entities.Mesto ..> javax.validation.constraints.Size
+entities.Mesto ..> javax.xml.bind.annotation.XmlRootElement
+entities.Mesto ..> javax.xml.bind.annotation.XmlTransient
+entities.Mesto ..> java.util.List
+entities.Mesto ..> javax.persistence.GenerationType
+entities.Mesto --|> java.io.Serializable
+podsistem1.Main ..> javax.annotation.Resource
+podsistem1.Main ..> entities.Korisnik
+podsistem1.Main ..> entities.Mesto
+podsistem1.Main ..> java.util.List
+podsistem1.Main ..> java.util.logging.Level
+podsistem1.Main ..> java.util.logging.Logger
+podsistem1.Main ..> javax.jms.ConnectionFactory
+podsistem1.Main ..> javax.jms.JMSConsumer
+podsistem1.Main ..> javax.jms.JMSContext
+podsistem1.Main ..> javax.jms.JMSException
+podsistem1.Main ..> javax.jms.JMSProducer
+podsistem1.Main ..> javax.jms.ObjectMessage
+podsistem1.Main ..> javax.jms.Topic
+podsistem1.Main ..> javax.persistence.EntityManager
+podsistem1.Main ..> javax.persistence.EntityManagerFactory
+podsistem1.Main ..> javax.persistence.EntityTransaction
+podsistem1.Main ..> javax.persistence.Persistence
+podsistem1.Main ..> javax.persistence.PersistenceContext
+podsistem1.Main ..> java.io.Serializable
+@enduml
